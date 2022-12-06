@@ -1,3 +1,4 @@
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=9563342)
 ## Зад 1.
 Разглеждаме "големи" цели положителни числа, представели свързан списък, обърнат, т.е. стойноста на единиците е първото число в този списък.
 Пример за такова число е 123456789012, като то се представя като
