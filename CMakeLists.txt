@@ -14,6 +14,7 @@ target_sources(
         PRIVATE
                 "src/cs/node.hpp"
                 "src/cs/task1.cpp"
+                "src/cs/task2.cpp"
 )
 
 
@@ -49,6 +50,7 @@ target_sources(
         unit-tests
         PRIVATE
                 "tests/cs/task1Tests.cpp"
+                "tests/cs/task2Tests.cpp"
 )
 
 
