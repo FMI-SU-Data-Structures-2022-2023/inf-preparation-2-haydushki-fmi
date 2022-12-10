@@ -29,7 +29,7 @@ void reverseSublists(Node<T>* list, const Interval* intervals)
 
         Node<T> *reversedPoint = reverse(startingPoint,
                                          currentInterval->to - currentInterval->from + 1);
-        if (previous == list) {
+        if (startingPoint == list) {
             list = reversedPoint;
         } else {
             previous->next = reversedPoint;
