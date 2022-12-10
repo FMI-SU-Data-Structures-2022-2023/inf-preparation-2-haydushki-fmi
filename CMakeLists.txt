@@ -7,15 +7,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 # Library target for the sample library
-add_library(cs STATIC)
+add_library(cs1 STATIC)
 
 target_sources(
-        cs
+        cs1
         PRIVATE
-                "src/cs/node.hpp"
-                "src/cs/task1.cpp"
-                "src/cs/task2.cpp"
-                "src/cs/task3.cpp"
+                "src/cs1/node.hpp"
+                "src/cs1/task1.cpp"
+                "src/cs1/task2.cpp"
+                "src/cs1/task3.cpp"
 )
 
 
@@ -41,7 +41,7 @@ add_executable(unit-tests)
 target_link_libraries(
         unit-tests
         PRIVATE
-                cs
+                cs1
                 Catch2::Catch2WithMain
 )
 
@@ -50,9 +50,9 @@ target_include_directories(unit-tests PRIVATE "src")
 target_sources(
         unit-tests
         PRIVATE
-                "tests/cs/task1Tests.cpp"
-                "tests/cs/task2Tests.cpp"
-                "tests/cs/task3Tests.cpp"
+                "tests/cs1/task1Tests.cpp"
+                "tests/cs1/task2Tests.cpp"
+                "tests/cs1/task3Tests.cpp"
 )
 
 

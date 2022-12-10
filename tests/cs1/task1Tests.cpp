@@ -1,5 +1,5 @@
-#include "cs/task1.cpp"
 #include "catch2/catch_all.hpp"
+#include "cs1/task1.cpp"
 
 TEST_CASE("reverse() throws when no list is passed")
 {

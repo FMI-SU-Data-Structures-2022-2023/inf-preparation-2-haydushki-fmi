@@ -1,5 +1,5 @@
 #include "catch2/catch_all.hpp"
-#include "cs/task3.cpp"
+#include "cs1/task3.cpp"
 
 TEST_CASE("readAndDelete() returns true for an empty word")
 {

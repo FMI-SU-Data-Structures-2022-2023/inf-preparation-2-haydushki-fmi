@@ -1,5 +1,5 @@
 #include "catch2/catch_all.hpp"
-#include "cs/task2.cpp"
+#include "cs1/task2.cpp"
 
 TEST_CASE("hasBalance() works as expected")
 {
