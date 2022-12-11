@@ -30,6 +30,18 @@ target_sources(
                 "src/cs2/task3.cpp"
 )
 
+# Library target for tasks in README file
+add_library(tasks STATIC)
+
+target_sources(
+        tasks
+        PRIVATE
+                "src/tasks/task1.cpp"
+                "src/tasks/task2.cpp"
+                "src/tasks/task3.cpp"
+                "src/tasks/task4.cpp"
+)
+
 
 #
 # Make Catch2 available. For more information check
@@ -55,6 +67,7 @@ target_link_libraries(
         PRIVATE
                 cs1
                 cs2
+                tasks
                 Catch2::Catch2WithMain
 )
 
@@ -69,6 +82,10 @@ target_sources(
                 "tests/cs2/task1Tests.cpp"
                 "tests/cs2/task2Tests.cpp"
                 "tests/cs2/task3Tests.cpp"
+                "tests/tasks/task1Tests.cpp"
+                "tests/tasks/task2Tests.cpp"
+                "tests/tasks/task3Tests.cpp"
+                "tests/tasks/task4Tests.cpp"
 )
 
 
