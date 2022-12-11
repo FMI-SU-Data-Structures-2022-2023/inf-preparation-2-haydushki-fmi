@@ -18,6 +18,18 @@ target_sources(
                 "src/cs1/task3.cpp"
 )
 
+# Library target for CS tasks variant 2
+add_library(cs2 STATIC)
+
+target_sources(
+        cs2
+        PRIVATE
+                "src/cs2/node.hpp"
+                "src/cs2/task1.cpp"
+                "src/cs2/task2.cpp"
+                "src/cs2/task3.cpp"
+)
+
 
 #
 # Make Catch2 available. For more information check
@@ -42,6 +54,7 @@ target_link_libraries(
         unit-tests
         PRIVATE
                 cs1
+                cs2
                 Catch2::Catch2WithMain
 )
 
@@ -53,6 +66,9 @@ target_sources(
                 "tests/cs1/task1Tests.cpp"
                 "tests/cs1/task2Tests.cpp"
                 "tests/cs1/task3Tests.cpp"
+                "tests/cs2/task1Tests.cpp"
+                "tests/cs2/task2Tests.cpp"
+                "tests/cs2/task3Tests.cpp"
 )
 
 
